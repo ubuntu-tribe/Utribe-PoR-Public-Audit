@@ -1,0 +1,388 @@
+/* ==========================================================================
+   GIFT Portal — Colors & Type
+   Ubuntu Tribe Design System foundations.
+   Sourced from src/assets/styles/main.css in Utribe-Portal-V3.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* -------- FONT FAMILIES -------- */
+  --font-display: 'Syne', ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    'DM Mono', ui-monospace, monospace;
+
+  /* -------- BRAND PRIMARY (Purple) -------- */
+  --brand-primary-50:  #F3EEFF;
+  --brand-primary-100: #E7DCFF;
+  --brand-primary-200: #CFB9FF;
+  --brand-primary-300: #B797FF;
+  --brand-primary-400: #9F74FE;
+  --brand-primary-500: #895CFE; /* core purple */
+  --brand-primary-600: #6F45D9;
+  --brand-primary-700: #5634A7;
+  --brand-primary-800: #3D2475;
+  --brand-primary-900: #261643;
+  --brand-primary-950: #190C2B;
+
+  /* -------- BRAND SECONDARY (Cyan) -------- */
+  --brand-secondary-50:  #E8FEFF;
+  --brand-secondary-100: #D1FDFF;
+  --brand-secondary-200: #A3FAFF;
+  --brand-secondary-300: #75F7FF;
+  --brand-secondary-400: #5EDCE7; /* core cyan */
+  --brand-secondary-500: #3DCCE0;
+  --brand-secondary-600: #2BA3B3;
+  --brand-secondary-700: #1F7A86;
+  --brand-secondary-800: #145159;
+  --brand-secondary-900: #0A282C;
+
+  /* -------- GOLD (GIFT contextual) -------- */
+  --gold-50:  #FFFBEB;
+  --gold-100: #FEF3C7;
+  --gold-200: #FDE68A;
+  --gold-300: #FCD34D;
+  --gold-400: #F9E873;
+  --gold-500: #F5CF59;
+  --gold-600: #EFBF49;
+  --gold-700: #D4A72C;
+  --gold-800: #A16207;
+  --gold-900: #713F12;
+
+  /* -------- SURFACES (Dark-first) -------- */
+  --surface-root:       #0A0A0C;
+  --surface-1:          #111115;
+  --surface-2:          #18181E;
+  --surface-3:          #1E1E26;
+  --surface-dark-base:      #0a0a0f;
+  --surface-dark-card:      #1a1825;
+  --surface-dark-elevated:  #252035;
+  --surface-dark-interactive:#2d2740;
+  --surface-dark-border:       rgba(137, 92, 254, 0.20);
+  --surface-dark-border-hover: rgba(137, 92, 254, 0.40);
+
+  /* -------- TEXT -------- */
+  --text-primary:   #F0EEE8;
+  --text-secondary: #9896A4;
+  --text-muted:     #6B6878;
+  --text-inverse:   #0A0A0C;
+
+  /* -------- SEMANTIC -------- */
+  --success: #2DD98F;
+  --danger:  #FF5E6A;
+  --info:    #5865F2;
+  --warning: #E8721A;
+
+  --border:      rgba(255,255,255,0.06);
+  --border-gold: rgba(212,167,44,0.20);
+
+  /* -------- GRADIENTS -------- */
+  --grad-brand:  linear-gradient(137.44deg, #5EDCE7 3.33%, #895CFE 100.72%);
+  --grad-brand-reverse: linear-gradient(137.44deg, #895CFE 3.33%, #5EDCE7 100.72%);
+  --grad-gold:   linear-gradient(135deg, #F5CF59 0%, #D4A72C 100%);
+  --grad-gold-button: linear-gradient(to right, #F9E873, #EFBF49);
+  --grad-orange: linear-gradient(135deg, #F08A3C 0%, #E8721A 100%);
+  --grad-indigo: linear-gradient(135deg, #7D86F5 0%, #5865F2 100%);
+  --grad-balance-text: linear-gradient(90deg, #F5CF59 0%, #E8B923 35%, #D4A72C 100%);
+
+  /* -------- SPACING -------- */
+  --space-xs:  0.5rem;   /* 8  */
+  --space-sm:  0.75rem;  /* 12 */
+  --space-md:  1rem;     /* 16 */
+  --space-lg:  1.5rem;   /* 24 */
+  --space-xl:  2rem;     /* 32 */
+  --space-2xl: 3rem;     /* 48 */
+  --space-3xl: 4rem;     /* 64 */
+
+  /* -------- RADII -------- */
+  --radius-xs:   0.25rem;
+  --radius-sm:   0.5rem;
+  --radius-md:   0.75rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.5rem;
+  --radius-2xl:  2rem;
+  --radius-full: 9999px;
+
+  /* -------- SHADOWS -------- */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.10), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.10), 0 10px 10px -5px rgba(0,0,0,0.04);
+  --shadow-brand:    0 4px 14px rgba(137, 92, 254, 0.15);
+  --shadow-brand-lg: 0 10px 40px rgba(137, 92, 254, 0.20);
+  --shadow-gold:     0 4px 14px rgba(239, 191, 73, 0.20);
+
+  /* -------- MOTION -------- */
+  --t-fast:   150ms;
+  --t-normal: 200ms;
+  --t-slow:   300ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ==========================================================================
+     DMO / Cortex layer — merged from DMO repo (apps/web/src/app.css)
+     Additive only. Existing vars unchanged.
+     ========================================================================== */
+
+  /* -------- GLASS SURFACES -------- */
+  --surface-glass:        rgba(255,255,255,0.05);
+  --surface-glass-hover:  rgba(255,255,255,0.07);
+  --surface-glass-active: rgba(255,255,255,0.10);
+
+  /* -------- GLASS BORDERS -------- */
+  --glass-border:        rgba(255,255,255,0.08);
+  --glass-border-soft:   rgba(255,255,255,0.05);
+  --glass-border-glow:   rgba(120,180,255,0.20);
+  --glass-border-focus:  rgba(91,156,246,0.40);
+
+  /* -------- VOID / DEPTH SCALE (Cortex) -------- */
+  --void:  #03040A;
+  --deep:  #07091A;
+  --well:  #0B0E24;
+  --raise: #0F1228;
+
+  /* -------- SEMANTIC STATUS PAIRS (bg + text) -------- */
+  --info-bg:     #0E1E30;  --info-text:     #85B7EB;
+  --success-bg:  #0D2018;  --success-text:  #5DCAA5;
+  --warning-bg:  #221608;  --warning-text:  #EF9F27;
+  --danger-bg:   #220D0D;  --danger-text:   #F09595;
+
+  /* -------- BLUE / VIOLET ACCENTS (data-viz & heatmaps) -------- */
+  --blue:        #5B9CF6;
+  --blue-dim:    rgba(91,156,246,0.12);
+  --blue-mid:    rgba(91,156,246,0.25);
+  --blue-border: rgba(91,156,246,0.45);
+  --blue-glow:   rgba(91,156,246,0.40);
+
+  --violet:        #9B6DFF;
+  --violet-light:  #C4B5FD;
+  --violet-dim:    rgba(155,109,255,0.12);
+  --violet-border: rgba(155,109,255,0.25);
+  --violet-glow:   rgba(155,109,255,0.35);
+
+  /* -------- EXTRA GRADIENTS -------- */
+  --gradient-hero:        linear-gradient(135deg, #0D0C14 0%, #171521 50%, #2A2739 100%);
+  --gradient-card:        linear-gradient(180deg, #2A2739 0%, #1F1D2D 100%);
+  --gradient-card-purple: linear-gradient(135deg, #1F1D2D 0%, #2A2739 60%, rgba(137,92,254,0.08) 100%);
+  --gradient-primary-tri: linear-gradient(135deg, #9F74FE 0%, #895CFE 50%, #6F45D9 100%);
+  --gradient-accent-tri:  linear-gradient(135deg, #72E7F0 0%, #5EDCE7 50%, #3DCCE0 100%);
+  --gradient-gold-tri:    linear-gradient(135deg, #F0CF51 0%, #E9C667 50%, #D4A72C 100%);
+
+  /* -------- RADIAL GLOWS -------- */
+  --glow-purple: radial-gradient(circle at 80% 20%, rgba(137,92,254,0.18) 0%, transparent 65%);
+  --glow-cyan:   radial-gradient(circle at 20% 80%, rgba(94,220,231,0.14) 0%, transparent 65%);
+  --glow-gold:   radial-gradient(circle at 80% 20%, rgba(233,198,103,0.12) 0%, transparent 65%);
+
+  /* -------- GLOW SHADOWS -------- */
+  --shadow-glow-blue:   0 0 20px rgba(91,156,246,0.30);
+  --shadow-glow-violet: 0 0 20px rgba(155,109,255,0.35);
+  --shadow-glow-cyan:   0 0 12px rgba(74,232,216,0.40);
+}
+
+/* ==========================================================================
+   LIGHT MODE — Cortex light theme (opt-in via [data-theme="light"])
+   ========================================================================== */
+[data-theme="light"] {
+  --surface-root:            #FAFAFC;
+  --surface-1:               #F4F4F7;
+  --surface-2:               #FFFFFF;
+  --surface-3:               #F4F4F7;
+  --surface-dark-base:       #FAFAFC;
+  --surface-dark-card:       #FFFFFF;
+  --surface-dark-elevated:   #F4F4F7;
+  --surface-dark-interactive:#E9E9EF;
+
+  --text-primary:   #1F1D2D;
+  --text-secondary: #6B6B80;
+  --text-muted:     #9999AB;
+
+  --border:      rgba(0,0,0,0.08);
+  --border-gold: rgba(184,144,31,0.25);
+
+  --surface-glass:       rgba(255,255,255,0.70);
+  --glass-border:        rgba(0,0,0,0.08);
+  --glass-border-soft:   rgba(0,0,0,0.04);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.10);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 28px rgba(0,0,0,0.15);
+}
+
+/* ==========================================================================
+   GLASS CARD + ATMOSPHERE UTILITIES — from DMO
+   ========================================================================== */
+.glass-card {
+  background: var(--surface-glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 200ms ease, background 200ms ease,
+              transform 200ms ease, box-shadow 200ms ease;
+}
+.glass-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  pointer-events: none; z-index: 1;
+}
+.glass-card::after {
+  content: '';
+  position: absolute; inset: 0; border-radius: inherit;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.03) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+}
+.glass-card:hover {
+  border-color: var(--glass-border-glow);
+  background: var(--surface-glass-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(120,180,255,0.1);
+}
+
+.bg-atmosphere {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(91,156,246,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 75%, rgba(155,109,255,0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(74,232,216,0.06) 0%, transparent 60%);
+}
+.bg-grid {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, black 30%, transparent 100%);
+}
+
+/* Shimmer text utility */
+.text-gradient-brand {
+  background: var(--gradient-primary-tri);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ==========================================================================
+   DMO ANIMATIONS
+   ========================================================================== */
+@keyframes orb-drift     { from { transform: translate(0,0) scale(1); } to { transform: translate(30px,-40px) scale(1.05); } }
+@keyframes ambient-line  { 0% { transform: translateX(-100%); } 100% { transform: translateX(100vw); } }
+@keyframes pulse-dot     { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(62,217,139,0.4); } 50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(62,217,139,0); } }
+@keyframes page-enter    { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes skeleton-pulse{ 0%,100% { opacity: 0.5; } 50% { opacity: 0.8; } }
+@keyframes shimmer       { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+
+/* ==========================================================================
+   SEMANTIC TYPE
+   Syne for display/marketing moments; DM Sans for UI & body; DM Mono for
+   addresses/amounts where tabular feel helps.
+   ========================================================================== */
+:root {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background: var(--surface-root);
+}
+
+.text-display, .t-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+h1, .t-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+h2, .t-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3, .t-h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+h4, .t-h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+p, .t-body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+}
+
+.t-body-sm, small {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.t-caption {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.t-overline {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.t-label {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.t-mono, code, kbd, samp {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+.t-balance {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 3.25rem);
+  letter-spacing: -0.02em;
+  background: var(--grad-balance-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.t-gradient {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
