@@ -96,7 +96,7 @@ full list.
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `VITE_RPC_URL`                 | `https://polygon-rpc.com`                      | Public Polygon RPC for read-only `eth_call`. |
+| `VITE_RPC_URL`                 | `https://polygon-bor-rpc.publicnode.com`       | Public Polygon RPC for read-only `eth_call`. (As of 2026-05-20, `https://polygon-rpc.com` returns 401 to unauthenticated POSTs; PublicNode / dRPC / QuikNode-public are confirmed working alternatives.) |
 | `VITE_CHAIN_ID`                | `137`                                          | Expected chain id for the wallet check. |
 | `VITE_GIFT_TOKEN_ADDRESS`      | `0xCfde7c43EDB3c9f71331AAc1003b099CE40c94ea`   | GIFT ERC-20. |
 | `VITE_POR_ADDRESS`             | `0xa674f2b838328A5ca29Df5fC2357d20D1AAc785e`   | TaaSMultiMetalPoR proxy. |

@@ -15,7 +15,7 @@
 |-----------------|--------------------------------------------------------------------------------|
 | Network         | **Polygon Mainnet**                                                            |
 | Chain ID        | `137`                                                                          |
-| Public RPC      | `https://polygon-rpc.com` (any Polygon-compatible RPC works)                   |
+| Public RPC      | `https://polygon-bor-rpc.publicnode.com` (any Polygon-compatible RPC works; `polygon-rpc.com` returns 401 unauthenticated as of 2026-05-20 — see README) |
 | Block explorer  | https://polygonscan.com                                                        |
 | Deployed at     | 2026-05-12 (PoR V2 deployment)                                                 |
 
