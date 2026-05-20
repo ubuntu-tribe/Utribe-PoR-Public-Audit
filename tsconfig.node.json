@@ -6,7 +6,10 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist-tsc-node",
+    "declaration": true,
     "types": ["node"]
   },
   "include": ["vite.config.ts", "postcss.config.js"]
