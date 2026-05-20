@@ -6,6 +6,7 @@ const links: readonly { to: string; label: string }[] = [
   { to: "/vaults", label: "Vaults" },
   { to: "/events", label: "Events" },
   { to: "/auditor", label: "Auditor" },
+  { to: "/docs", label: "Docs" },
 ] as const;
 </script>
 

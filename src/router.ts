@@ -5,6 +5,7 @@ const routes: RouteRecordRaw[] = [
   { path: "/vaults", name: "vaults", component: () => import("./pages/VaultsPage.vue"), meta: { title: "Vaults" } },
   { path: "/events", name: "events", component: () => import("./pages/EventsPage.vue"), meta: { title: "Events" } },
   { path: "/auditor", name: "auditor", component: () => import("./pages/AuditorPage.vue"), meta: { title: "Auditor Console" } },
+  { path: "/docs", name: "docs", component: () => import("./pages/DocsPage.vue"), meta: { title: "Docs" } },
   { path: "/:catchAll(.*)", redirect: "/" },
 ];
 
