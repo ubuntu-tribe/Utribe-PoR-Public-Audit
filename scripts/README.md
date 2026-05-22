@@ -1,9 +1,6 @@
 # Verification scripts
 
-Pure-Python scripts that reproduce the on-chain verifications described in
-[Ubuntu Tribe's $GIFT Proof-of-Reserves Auditor Reference](
-https://github.com/mrrfid/cait/blob/main/documents/utribe/audits/$GIFT-PoR/PoR-Auditor-Reference-v2026-05-21.1.pdf
-) without any uTribe-side dependency. Every call is read-only `eth_call`.
+Pure-Python scripts that reproduce the on-chain verifications, without any uTribe-side dependency. Every call is read-only `eth_call`.
 
 ## `verify_kyc.py`
 
