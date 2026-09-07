@@ -12,6 +12,13 @@ export const ENV = {
   porAddress: (env.VITE_POR_ADDRESS ?? "0xa674f2b838328A5ca29Df5fC2357d20D1AAc785e") as `0x${string}`,
   mintController: (env.VITE_MINT_CONTROLLER_ADDRESS ?? "0xeae4E63F42794952Aa820c30731B1b1f18D6c4C9") as `0x${string}`,
   taasApiUrl: env.VITE_TAAS_API_URL ?? "https://api-stage1.utribe.app",
+  // Google Maps JS API for the vault map. Without a key the map renders a
+  // text fallback instead.
+  googleMapsKey: (env.VITE_GOOGLE_MAPS ?? "") as string,
+  // Advanced markers only render on a map tied to a cloud-configured Map ID,
+  // which is also the only way to style the basemap. DEMO_MAP_ID keeps local
+  // dev working but is rate limited and unsupported for production traffic.
+  googleMapsMapId: (env.VITE_GOOGLE_MAPS_MAP_ID ?? "DEMO_MAP_ID") as string,
 } as const;
 
 export const POLYGONSCAN = "https://polygonscan.com";

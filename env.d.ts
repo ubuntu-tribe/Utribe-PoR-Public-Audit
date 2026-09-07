@@ -7,6 +7,8 @@ interface ImportMetaEnv {
   readonly VITE_POR_ADDRESS?: string;
   readonly VITE_MINT_CONTROLLER_ADDRESS?: string;
   readonly VITE_TAAS_API_URL?: string;
+  readonly VITE_GOOGLE_MAPS?: string;
+  readonly VITE_GOOGLE_MAPS_MAP_ID?: string;
 }
 
 interface ImportMeta {
